@@ -56,6 +56,7 @@ import static com.graphhopper.util.Parameters.Algorithms.*;
 import static com.graphhopper.util.Parameters.Curbsides.*;
 import static com.graphhopper.util.Parameters.Routing.U_TURN_COSTS;
 import static java.util.Arrays.asList;
+import static org.junit.jupiter.api.Assertions.fail;
 
 /**
  * @author Peter Karich
@@ -91,6 +92,7 @@ public class GraphHopperIT {
             ASTAR_BI + ",true,29"
     })
     public void testMonacoDifferentAlgorithms(String algo, boolean withCH, int expectedVisitedNodes) {
+        fail("THIS IS SUPPOSED TO FAIL");
         final String vehicle = "car";
         final String weighting = "fastest";
         GraphHopper hopper = createGraphHopper(vehicle).

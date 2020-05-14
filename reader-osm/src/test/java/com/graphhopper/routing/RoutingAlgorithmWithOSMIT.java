@@ -46,6 +46,7 @@ import static com.graphhopper.GraphHopperIT.DIR;
 import static com.graphhopper.util.Parameters.Algorithms.ASTAR;
 import static com.graphhopper.util.Parameters.Algorithms.DIJKSTRA_BI;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Try algorithms, indices and graph storages with real data
@@ -97,6 +98,7 @@ public class RoutingAlgorithmWithOSMIT {
 
     @Test
     public void testMonacoMotorcycle() {
+        assertTrue("IF THIS DOES NOT FAIL THE BUILD WHAT DOES?", false);
         List<OneRun> list = new ArrayList<>();
         list.add(new OneRun(43.730729, 7.42135, 43.727697, 7.419199, 2682, 119));
         list.add(new OneRun(43.727687, 7.418737, 43.74958, 7.436566, 3728, 170));
