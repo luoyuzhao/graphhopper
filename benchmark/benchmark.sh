@@ -44,6 +44,7 @@ java -cp tools/target/graphhopper-tools-*-jar-with-dependencies.jar com.graphhop
 datareader.file=${SMALL_OSM_MAP} \
 datareader.date_range_parser_day=2019-11-01 \
 measurement.name=small_map \
+measurement.seed=456 \
 measurement.folder=${SINGLE_RESULTS_DIR} \
 measurement.clean=true \
 measurement.summaryfile=${RESULTS_DIR}summary_small.dat \
@@ -68,6 +69,7 @@ java -cp tools/target/graphhopper-tools-*-jar-with-dependencies.jar com.graphhop
 datareader.file=${BIG_OSM_MAP} \
 datareader.date_range_parser_day=2019-11-01 \
 measurement.name=big_map \
+measurement.seed=456 \
 measurement.folder=${SINGLE_RESULTS_DIR} \
 measurement.clean=true \
 measurement.summaryfile=${RESULTS_DIR}summary_big.dat \
@@ -95,6 +97,7 @@ java -cp tools/target/graphhopper-tools-*-jar-with-dependencies.jar com.graphhop
 datareader.file=${BIG_OSM_MAP} \
 datareader.date_range_parser_day=2019-11-01 \
 measurement.name=big_map_little_custom \
+measurement.seed=456 \
 measurement.folder=${SINGLE_RESULTS_DIR} \
 measurement.clean=true \
 measurement.summaryfile=${RESULTS_DIR}summary_big_little_custom.dat \
@@ -124,6 +127,7 @@ java -cp tools/target/graphhopper-tools-*-jar-with-dependencies.jar com.graphhop
 datareader.file=${BIG_OSM_MAP} \
 datareader.date_range_parser_day=2019-11-01 \
 measurement.name=big_map_very_custom \
+measurement.seed=456 \
 measurement.folder=${SINGLE_RESULTS_DIR} \
 measurement.clean=true \
 measurement.summaryfile=${RESULTS_DIR}summary_big_very_custom.dat \
